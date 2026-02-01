@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norabeth's Portfolio</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Reset and base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header */
+        header { background: linear-gradient(90deg, #6a11cb, #2575fc); color: white; padding: 40px 20px; }
+        .header-content { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px; }
+        .profile-pic { width: 120px; height: 120px; border-radius: 50%; border: 3px solid white; object-fit: cover; transition: transform 0.3s, box-shadow 0.3s; }
+        .profile-pic:hover { transform: scale(1.1); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        .header-text { text-align: center; }
+        .header-text h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .header-text p { font-size: 1.2rem; opacity: 0.85; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: center; background-color: #1f1f1f; padding: 15px 0; flex-wrap: wrap; }
+        nav a { margin: 5px 20px; font-weight: bold; color: #fff; transition: 0.3s; display: flex; align-items: center; gap: 8px; }
+        nav a:hover { color: #2575fc; }
+
+        /* Container & Sections */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        section { background: #fff; padding: 30px 25px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+        section:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        section h2 { color: #2575fc; margin-bottom: 15px; }
+
+        /* Lists */
+        ul { margin-left: 20px; margin-bottom: 10px; }
+        li { margin-bottom: 12px; }
+
+        /* Contact links */
+        .contact-links a { display: inline-block; margin-right: 15px; color: #2575fc; font-weight: bold; transition: 0.3s; }
+        .contact-links a:hover { text-decoration: underline; }
+
+        /* Education section with circular logos */
+        .school { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .school-logo { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc; transition: transform 0.3s; }
+        .school-logo:hover { transform: scale(1.1); }
+        .school-info { flex: 1; font-size: 1rem; }
+
+        /* Footer */
+        footer { background-color: #1f1f1f; color: #fff; text-align: center; padding: 20px; margin-top: 50px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav a { margin: 10px 0; }
+            .header-text h1 { font-size: 2rem; }
+            .profile-pic { width: 100px; height: 100px; }
+            .school { flex-direction: column; align-items: flex-start; }
+            .school-logo { margin-bottom: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="ID_SLSU.jpg" alt="Norabeth Mantillo" class="profile-pic">
+        <div class="header-text">
+            <h1>Norabeth Mantillo</h1>
+            <p>Passionate about creating, learning, and growing every day</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#home"><i class="fas fa-home"></i>Home</a>
+    <a href="#about"><i class="fas fa-user"></i>About</a>
+    <a href="#skills"><i class="fas fa-lightbulb"></i>Skills</a>
+    <a href="#projects"><i class="fas fa-folder-open"></i>Projects</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+    <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my personal portfolio website! Here you can explore my skills, projects, education, and contact information. This website was developed using HTML and CSS, focusing on a responsive and clean design.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a 21 years old from Anda Bohol and a BSIT Student at Southern Leyte State University, Tomas Oppus Campus , San Isidro Tomas Oppus, Southern Leyte Philippines. My passion lies in web development, programming, and creating functional and user-friendly websites. This portfolio showcases my abilities and projects I’ve worked on.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Responsive Web Design</li>
+            <li>PHP & MySQL</li>
+            <li>Basic Android App Development</li>
+            <li>Using AI tools for web development</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Guided Website Development Project (HTML & CSS)</li>
+            <li>Student Uniform Reservation Management System (PHP & MySQL)</li>
+            <li>Stock Control Management System (Android & PHP Backend)</li>
+            <li>POS System</li>
+            <li>Tower Defense Game Prototype (Visily)</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="school">
+            <img src="Elem_logo.jpg" alt="Linawan Elementary School Logo" class="school-logo">
+            <div class="school-info">
+                <strong>Elementary School:</strong> Linawan Elementary School, Linawan, Anda, Bohol
+                <br>Graduated: S.Y 2016
+            </div>
+        </div>
+
+        <div class="school">
+            <img src="bnhs logo.jpg" alt="Badiang National High School Logo" class="school-logo">
+            <div class="school-info">
+                <strong>High School:</strong> Badiang National High School, Badiang, Anda, Bohol
+                <br>Graduated: S.Y 2022
+            </div>
+        </div>
+
+        <div class="school">
+            <img src="slsu logo.png" alt="Southern Leyte State University Logo" class="school-logo">
+            <div class="school-info">
+                <strong>College:</strong> Bachelor of Science in Information Technology (BSIT) – Southern Leyte State University, Tomas Oppus Campus
+                <br>Relevant Courses: Web Development, Programming, Database Management, Data Structures & Algorithms
+                <br>Graduation: Undergraduate S.Y 2026
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:norabethmantillo24@gmail.com">norabethmantillo24@gmail.com</a></p>
+        <p>Phone: <a href="tel:09123456789">0912-345-6789</a></p>
+        <div class="contact-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Norabeth Mantillo | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
